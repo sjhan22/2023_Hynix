@@ -1,0 +1,95 @@
+
+***************************************************************************** 
+* CDL Netlist: 
+* Cell Name: ANALOG 
+* Netlisted on: Dec 6 20:18:42 2022 
+***************************************************************************** 
+
+***************************************************************************** 
+* BIPOLAR Declarations 
+***************************************************************************** 
+*.SCALE MICRON 
+
+
+***************************************************************************** 
+* Parameter Statement 
+***************************************************************************** 
+.PARAM 
+
+.GLOBAL VVB 
+*******************************************************************************
+* MOS									      *
+*******************************************************************************
+.subckt NMOS D G S B B2 
+.ends NMOS
+.subckt PMOS D G S B B2 
+.ends PMOS 
+.subckt MSWO T1 T2
+.ends MSW0
+
+
+****************************************************************************** * 
+* Main Circuit Netlist: * 
+* * 
+* Library: SCHEMATIC * 
+* Cell : ANALOG * 
+* View : schematic * 
+* Last Time Saved: Dec 6 20:18:21 2022 * 
+****************************************************************************** * 
+.subckt ANALOG OUT OUTB VDD VSS IN INB IN_1 IN_2 
+*.PININFO OUT:O OUTB:O VDD:B VSS:B IN:I INB:I IN_1:I IN_2:I  
+XSW0<0> DET NET61<0> MSW  
+XSW0<1> DET NET61<1> MSW  
+XSW1<0> NET014 NET56<0> MSW  
+XSW1<1> NET014 NET56<1> MSW  
+XMC_A<0> OUT NET8 NET0 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMC_A<1> OUT NET8 NET0 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMD_A<0> NET0 IN NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMD_A<1> NET0 IN NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMD_A<2> NET0 IN NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMD_A<3> NET0 IN NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMZ5 IN_1 IN_1 NET8 NET8 VDD NMOS w=1 l=1 nf=1  $bulk2=VDD 
+XMZ6 NET8 NET8 NET31 NET31 VDD NMOS w=1 l=1 nf=1  $bulk2=VDD 
+XMC_B<0> OUTB NET8 NET1 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMC_B<1> OUTB NET8 NET1 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_B<0> DET NET8 OUTB VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_B<1> DET NET8 OUTB VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_B<2> DET NET8 OUTB VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_B<3> DET NET8 OUTB VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMZ3<0> NET2 IN_2 NET21 VSS VVB NMOS w=1 l=1 nf=1  $bulk2=VVB 
+XMZ3<1> NET2 IN_2 NET21 VSS VVB NMOS w=1 l=1 nf=1  $bulk2=VVB 
+XMZ3<2> NET2 IN_2 NET21 VSS VVB NMOS w=1 l=1 nf=1  $bulk2=VVB 
+XMZ3<3> NET2 IN_2 NET21 VSS VVB NMOS w=1 l=1 nf=1  $bulk2=VVB 
+XMZ7 NET31 NET31 VSS VSS VDD NMOS w=1 l=1 nf=1  $bulk2=VDD 
+XMD_B<0> NET1 INB NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMD_B<1> NET1 INB NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMD_B<2> NET1 INB NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMD_B<3> NET1 INB NET2 VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_A<0> NET014 NET8 OUT VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_A<1> NET014 NET8 OUT VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_A<2> NET014 NET8 OUT VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMB_A<3> NET014 NET8 OUT VSS VVB NMOS w=1 l=0.3 nf=1  $bulk2=VVB 
+XMZ4 NET21 IN_1 VSS VSS VVB NMOS w=8 l=0.1 nf=12  $bulk2=VVB 
+XMA_C<0> NET56<0> NET014 VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_C<1> NET56<1> NET014 VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_D<0> NET61<0> DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_D<1> NET61<1> DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMZ2 NET014 IN_1 VDD VDD PMOS w=2 l=0.126 nf=1  
+XMZ1 DET IN_1 VDD VDD PMOS w=2 l=0.126 nf=1  
+XMA_B<0> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_B<1> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_B<2> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_B<3> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_B<4> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_B<5> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_B<6> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_B<7> DET DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<0> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<1> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<2> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<3> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<4> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<5> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<6> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+XMA_A<7> NET014 DET VDD VDD PMOS w=2 l=0.3 nf=1  
+.ends ANALOG 

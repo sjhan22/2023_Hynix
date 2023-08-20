@@ -1,0 +1,1055 @@
+
+***************************************************************************** 
+* CDL Netlist: 
+* Cell Name: CE
+* Netlisted on: Apr 14 20:49:58 2023 
+***************************************************************************** 
+
+***************************************************************************** 
+* BIPOLAR Declarations 
+***************************************************************************** 
+*.SCALE MICRON 
+
+
+***************************************************************************** 
+* Parameter Statement 
+***************************************************************************** 
+.PARAM 
+
+.GLOBAL VVB 
+*******************************************************************************
+* Insert Sub-Circuit Netlist for five terminal NMOS   :                       *
+*  model type "not NM" =>"NM",instance name "Mxxx" => "XMxxx",add B2 net      *
+*  Block: MN                                                                  *
+*******************************************************************************
+.subckt MNCAP D G S B B2 
+.ends MNCAP 
+.subckt MNCAP_S D G S B B2 
+.ends MNCAP_S 
+.subckt MNMOS D G S B B2 
+.ends MNMOS 
+.subckt MNMOS_S D G S B B2 
+.ends MNMOS_S 
+.subckt MNRCAP D G S B B2 
+.ends MNRCAP 
+.subckt MNRCAP_S D G S B B2 
+.ends MNRCAP_S 
+.subckt NCAP D G S B B2 
+.ends NCAP 
+.subckt NCAP_S D G S B B2 
+.ends NCAP_S 
+.subckt NCAPLVT D G S B B2 
+.ends NCAPLVT 
+.subckt NCAPLVT_S D G S B B2 
+.ends NCAPLVT_S 
+.subckt NCAPLVTG D G S B B2 
+.ends NCAPLVTG 
+.subckt NCAPLVTG_S D G S B B2 
+.ends NCAPLVTG_S 
+.subckt NMOS D G S B B2 
+.ends NMOS 
+.subckt NMOS_S D G S B B2 
+.ends NMOS_S 
+.subckt NMOSA D G S B B2 
+.ends NMOSA 
+.subckt NMOSA_S D G S B B2 
+.ends NMOSA_S 
+.subckt NMOSALAT D G S B B2 
+.ends NMOSALAT 
+.subckt NMOSALAT_S D G S B B2 
+.ends NMOSALAT_S 
+.subckt NMOSAFX1 D G S B B2 
+.ends NMOSAFX1 
+.subckt NMOSAFX1_S D G S B B2 
+.ends NMOSAFX1_S 
+.subckt NMOSAFX3 D G S B B2 
+.ends NMOSAFX3 
+.subckt NMOSAFX3_S D G S B B2 
+.ends NMOSAFX3_S 
+.subckt NMOSAFX5 D G S B B2 
+.ends NMOSAFX5 
+.subckt NMOSAFX5_S D G S B B2 
+.ends NMOSAFX5_S 
+.subckt NMOSAFX7 D G S B B2 
+.ends NMOSAFX7 
+.subckt NMOSAFX7_S D G S B B2 
+.ends NMOSAFX7_S 
+.subckt NMOSAG D G S B B2 
+.ends NMOSAG 
+.subckt NMOSAG_S D G S B B2 
+.ends NMOSAG_S 
+.subckt NMOSASB D G S B B2 
+.ends NMOSASB 
+.subckt NMOSASB_S D G S B B2 
+.ends NMOSASB_S 
+.subckt NMOSMWBFXBA D G S B B2 
+.ends NMOSMWBFXBA 
+.subckt NMOSMWBFXBA_S D G S B B2 
+.ends NMOSMWBFXBA_S 
+.subckt NMOSAMWB D G S B B2 
+.ends NMOSAMWB 
+.subckt NMOSAMWB_S D G S B B2 
+.ends NMOSAMWB_S 
+.subckt NMOSAFXB D G S B B2 
+.ends NMOSAFXB 
+.subckt NMOSAFXB_S D G S B B2 
+.ends NMOSAFXB_S 
+.subckt NMOSG D G S B B2 
+.ends NMOSG 
+.subckt NMOSG_S D G S B B2 
+.ends NMOSG_S 
+.subckt NMOSLVPP D G S B B2 
+.ends NMOSLVPP 
+.subckt NMOSLVPP_S D G S B B2 
+.ends NMOSLVPP_S 
+.subckt NMOSLVPPQG D G S B B2 
+.ends NMOSLVPPQG 
+.subckt NMOSLVPPQG_S D G S B B2 
+.ends NMOSLVPPQG_S 
+.subckt NMOSLVT D G S B B2 
+.ends NMOSLVT 
+.subckt NMOSLVT_S D G S B B2 
+.ends NMOSLVT_S 
+.subckt NMOSLVTSH D G S B B2 
+.ends NMOSLVTSH 
+.subckt NMOSLVTSH_S D G S B B2 
+.ends NMOSLVTSH_S 
+.subckt NMOSLVTA D G S B B2 
+.ends NMOSLVTA 
+.subckt NMOSLVTA_S D G S B B2 
+.ends NMOSLVTA_S 
+.subckt NMOSLVTALAT D G S B B2 
+.ends NMOSLVTALAT 
+.subckt NMOSLVTALAT_S D G S B B2 
+.ends NMOSLVTALAT_S 
+.subckt NMOSLVTAVISO D G S B B2 
+.ends NMOSLVTAVISO 
+.subckt NMOSLVTAVISO_S D G S B B2 
+.ends NMOSLVTAVISO_S 
+.subckt NMOSLVTASH D G S B B2 
+.ends NMOSLVTASH 
+.subckt NMOSLVTASH_S D G S B B2 
+.ends NMOSLVTASH_S 
+.subckt NMOSLVTA1 D G S B B2 
+.ends NMOSLVTA1 
+.subckt NMOSLVTA1_S D G S B B2 
+.ends NMOSLVTA1_S 
+.subckt NMOSLVTA3 D G S B B2 
+.ends NMOSLVTA3 
+.subckt NMOSLVTA3_S D G S B B2 
+.ends NMOSLVTA3_S 
+.subckt NMOSLVTA5 D G S B B2 
+.ends NMOSLVTA5 
+.subckt NMOSLVTA5_S D G S B B2 
+.ends NMOSLVTA5_S 
+.subckt NMOSLVTA7 D G S B B2 
+.ends NMOSLVTA7 
+.subckt NMOSLVTA7_S D G S B B2 
+.ends NMOSLVTA7_S 
+.subckt NMOSLVTAFX1 D G S B B2 
+.ends NMOSLVTAFX1 
+.subckt NMOSLVTAFX1_S D G S B B2 
+.ends NMOSLVTAFX1_S 
+.subckt NMOSLVTAFX3 D G S B B2 
+.ends NMOSLVTAFX3 
+.subckt NMOSLVTAFX3_S D G S B B2 
+.ends NMOSLVTAFX3_S 
+.subckt NMOSLVTAFX5 D G S B B2 
+.ends NMOSLVTAFX5 
+.subckt NMOSLVTAFX5_S D G S B B2 
+.ends NMOSLVTAFX5_S 
+.subckt NMOSLVTAFX7 D G S B B2 
+.ends NMOSLVTAFX7 
+.subckt NMOSLVTAFX7_S D G S B B2 
+.ends NMOSLVTAFX7_S 
+.subckt NMOSLVTAG D G S B B2 
+.ends NMOSLVTAG 
+.subckt NMOSLVTAG_S D G S B B2 
+.ends NMOSLVTAG_S 
+.subckt NMOSLVTIOB D G S B B2 
+.ends NMOSLVTIOB 
+.subckt NMOSLVTIOB_S D G S B B2 
+.ends NMOSLVTIOB_S 
+.subckt NMOSLVTIOT D G S B B2 
+.ends NMOSLVTIOT 
+.subckt NMOSLVTIOT_S D G S B B2 
+.ends NMOSLVTIOT_S 
+.subckt NMOSLVTG D G S B B2 
+.ends NMOSLVTG 
+.subckt NMOSLVTG_S D G S B B2 
+.ends NMOSLVTG_S 
+.subckt NMOSLVTXDEC D G S B B2 
+.ends NMOSLVTXDEC 
+.subckt NMOSLVTXDEC_S D G S B B2 
+.ends NMOSLVTXDEC_S 
+.subckt NMOSLVTSB D G S B B2 
+.ends NMOSLVTSB 
+.subckt NMOSLVTSB_S D G S B B2 
+.ends NMOSLVTSB_S 
+.subckt NMOSLVTASB D G S B B2 
+.ends NMOSLVTASB 
+.subckt NMOSLVTASB_S D G S B B2 
+.ends NMOSLVTASB_S 
+.subckt NMOSPRE D G S B B2 
+.ends NMOSPRE 
+.subckt NMOSPRE_S D G S B B2 
+.ends NMOSPRE_S 
+.subckt NMOSQ D G S B B2 
+.ends NMOSQ 
+.subckt NMOSQ_S D G S B B2 
+.ends NMOSQ_S 
+.subckt NMOSQESD D G S B B2 
+.ends NMOSQESD 
+.subckt NMOSQESD_S D G S B B2 
+.ends NMOSQESD_S 
+.subckt NMOSQESDG D G S B B2 
+.ends NMOSQESDG 
+.subckt NMOSQESDG_S D G S B B2 
+.ends NMOSQESDG_S 
+.subckt NMOS_ESD D G S B B2 
+.ends NMOS_ESD 
+.subckt NMOS_ESD_S D G S B B2 
+.ends NMOS_ESD_S 
+.subckt NMOSG_ESD D G S B B2 
+.ends NMOSG_ESD 
+.subckt NMOSG_ESD_S D G S B B2 
+.ends NMOSG_ESD_S 
+.subckt NMOSQG D G S B B2 
+.ends NMOSQG 
+.subckt NMOSQG_S D G S B B2 
+.ends NMOSQG_S 
+.subckt NMOSSA D G S B B2 
+.ends NMOSSA 
+.subckt NMOSSA_S D G S B B2 
+.ends NMOSSA_S 
+.subckt NMOSSB D G S B B2 
+.ends NMOSSB 
+.subckt NMOSSB_S D G S B B2 
+.ends NMOSSB_S 
+.subckt NMOSTR D G S B B2 
+.ends NMOSTR 
+.subckt NMOSTR_S D G S B B2 
+.ends NMOSTR_S 
+.subckt NMOSWC D G S B B2 
+.ends NMOSWC 
+.subckt NMOSWC_S D G S B B2 
+.ends NMOSWC_S 
+.subckt NMOSWCG D G S B B2 
+.ends NMOSWCG 
+.subckt NMOSWCG_S D G S B B2 
+.ends NMOSWCG_S 
+.subckt NMOSXDEC D G S B B2 
+.ends NMOSXDEC 
+.subckt NMOSXDEC_S D G S B B2 
+.ends NMOSXDEC_S 
+.subckt NMOSYI D G S B B2 
+.ends NMOSYI 
+.subckt NMOSYI_S D G S B B2 
+.ends NMOSYI_S 
+.subckt SNCAP D G S B B2 
+.ends SNCAP 
+.subckt SNCAP_S D G S B B2 
+.ends SNCAP_S 
+.subckt SNCAPLVT D G S B B2 
+.ends SNCAPLVT 
+.subckt SNCAPLVT_S D G S B B2 
+.ends SNCAPLVT_S 
+.subckt SNMOS D G S B B2 
+.ends SNMOS 
+.subckt SNMOS_S D G S B B2 
+.ends SNMOS_S 
+.subckt SNMOSAD D G S B B2 
+.ends SNMOSAD 
+.subckt SNMOSAD_S D G S B B2 
+.ends SNMOSAD_S 
+.subckt SNMOSADG D G S B B2 
+.ends SNMOSADG 
+.subckt SNMOSADG_S D G S B B2 
+.ends SNMOSADG_S 
+.subckt SNMOSFU D G S B B2 
+.ends SNMOSFU 
+.subckt SNMOSFU_S D G S B B2 
+.ends SNMOSFU_S 
+.subckt SNMOSCCL D G S B B2 
+.ends SNMOSCCL 
+.subckt SNMOSCCL_S D G S B B2 
+.ends SNMOSCCL_S 
+.subckt SNMOSCCLG D G S B B2 
+.ends SNMOSCCLG 
+.subckt SNMOSCCLG_S D G S B B2 
+.ends SNMOSCCLG_S 
+.subckt SNMOS2CCL D G S B B2 
+.ends SNMOS2CCL 
+.subckt SNMOS2CCL_S D G S B B2 
+.ends SNMOS2CCL_S 
+.subckt SNMOS2CCLG D G S B B2 
+.ends SNMOS2CCLG 
+.subckt SNMOS2CCLG_S D G S B B2 
+.ends SNMOS2CCLG_S 
+.subckt SNMOS2 D G S B B2 
+.ends SNMOS2 
+.subckt SNMOS2_S D G S B B2 
+.ends SNMOS2_S 
+.subckt SNMOS2SH D G S B B2 
+.ends SNMOS2SH 
+.subckt SNMOS2SH_S D G S B B2 
+.ends SNMOS2SH_S 
+.subckt SNMOS29 D G S B B2 
+.ends SNMOS29 
+.subckt SNMOS29_S D G S B B2 
+.ends SNMOS29_S 
+.subckt SNMOS2F D G S B B2 
+.ends SNMOS2F 
+.subckt SNMOS2F_S D G S B B2 
+.ends SNMOS2F_S 
+.subckt SNMOS2G D G S B B2 
+.ends SNMOS2G 
+.subckt SNMOS2G_S D G S B B2 
+.ends SNMOS2G_S 
+.subckt SNMOS2Q D G S B B2 
+.ends SNMOS2Q 
+.subckt SNMOS2Q_S D G S B B2 
+.ends SNMOS2Q_S 
+.subckt SNMOS2QG D G S B B2 
+.ends SNMOS2QG 
+.subckt SNMOS2QG_S D G S B B2 
+.ends SNMOS2QG_S 
+.subckt SNMOS2SB D G S B B2 
+.ends SNMOS2SB 
+.subckt SNMOS2SB_S D G S B B2 
+.ends SNMOS2SB_S 
+.subckt SNMOS2LSA D G S B B2 
+.ends SNMOS2LSA 
+.subckt SNMOS2LSA_S D G S B B2 
+.ends SNMOS2LSA_S 
+.subckt SNMOS2LSAT D G S B B2 
+.ends SNMOS2LSAT 
+.subckt SNMOS2LSAT_S D G S B B2 
+.ends SNMOS2LSAT_S 
+.subckt SNMOS2LSAB D G S B B2 
+.ends SNMOS2LSAB 
+.subckt SNMOS2LSAB_S D G S B B2 
+.ends SNMOS2LSAB_S 
+.subckt SNMOS2EQPRE D G S B B2 
+.ends SNMOS2EQPRE 
+.subckt SNMOS2EQPRE_S D G S B B2 
+.ends SNMOS2EQPRE_S 
+.subckt SNMOS2GENTG D G S B B2 
+.ends SNMOS2GENTG 
+.subckt SNMOS2GENTG_S D G S B B2 
+.ends SNMOS2GENTG_S 
+.subckt SNMOS32 D G S B B2 
+.ends SNMOS32 
+.subckt SNMOS32_S D G S B B2 
+.ends SNMOS32_S 
+.subckt SNMOS32G D G S B B2 
+.ends SNMOS32G 
+.subckt SNMOS32G_S D G S B B2 
+.ends SNMOS32G_S 
+.subckt SNMOSARE D G S B B2 
+.ends SNMOSARE 
+.subckt SNMOSARE_S D G S B B2 
+.ends SNMOSARE_S 
+.subckt SNMOSAREG D G S B B2 
+.ends SNMOSAREG 
+.subckt SNMOSAREG_S D G S B B2 
+.ends SNMOSAREG_S 
+.subckt SNMOS2ARE D G S B B2 
+.ends SNMOS2ARE 
+.subckt SNMOS2ARE_S D G S B B2 
+.ends SNMOS2ARE_S 
+.subckt SNMOS2AREG D G S B B2 
+.ends SNMOS2AREG 
+.subckt SNMOS2AREG_S D G S B B2 
+.ends SNMOS2AREG_S 
+.subckt SNMOSDEPCAP D G S B B2 
+.ends SNMOSDEPCAP 
+.subckt SNMOSDEPCAP_S D G S B B2 
+.ends SNMOSDEPCAP_S 
+.subckt SNMOSDEPCAPG D G S B B2 
+.ends SNMOSDEPCAPG 
+.subckt SNMOSDEPCAPG_S D G S B B2 
+.ends SNMOSDEPCAPG_S 
+.subckt SNMOS2DEPCAPG D G S B B2 
+.ends SNMOS2DEPCAPG 
+.subckt SNMOS2DEPCAPG_S D G S B B2 
+.ends SNMOS2DEPCAPG_S 
+.subckt SNMOSEQ D G S B B2 
+.ends SNMOSEQ 
+.subckt SNMOSEQ_S D G S B B2 
+.ends SNMOSEQ_S 
+.subckt SNMOSEQPRE D G S B B2 
+.ends SNMOSEQPRE 
+.subckt SNMOSEQPRE_S D G S B B2 
+.ends SNMOSEQPRE_S 
+.subckt SNMOSG D G S B B2 
+.ends SNMOSG 
+.subckt SNMOSG_S D G S B B2 
+.ends SNMOSG_S 
+.subckt SNMOSLBLSA D G S B B2 
+.ends SNMOSLBLSA 
+.subckt SNMOSLBLSA_S D G S B B2 
+.ends SNMOSLBLSA_S 
+.subckt SNMOSLSASB D G S B B2 
+.ends SNMOSLSASB 
+.subckt SNMOSLSASB_S D G S B B2 
+.ends SNMOSLSASB_S 
+.subckt SNMOSLSAB D G S B B2 
+.ends SNMOSLSAB 
+.subckt SNMOSLSAB_S D G S B B2 
+.ends SNMOSLSAB_S 
+.subckt SNMOSLSAT D G S B B2 
+.ends SNMOSLSAT 
+.subckt SNMOSLSAT_S D G S B B2 
+.ends SNMOSLSAT_S 
+.subckt SNMOSLVT D G S B B2 
+.ends SNMOSLVT 
+.subckt SNMOSLVT_S D G S B B2 
+.ends SNMOSLVT_S 
+.subckt SNMOSLVTQ D G S B B2 
+.ends SNMOSLVTQ 
+.subckt SNMOSLVTQ_S D G S B B2 
+.ends SNMOSLVTQ_S 
+.subckt SNMOSLVTQG D G S B B2 
+.ends SNMOSLVTQG 
+.subckt SNMOSLVTQG_S D G S B B2 
+.ends SNMOSLVTQG_S 
+.subckt SNMOSLVT2 D G S B B2 
+.ends SNMOSLVT2 
+.subckt SNMOSLVT2_S D G S B B2 
+.ends SNMOSLVT2_S 
+.subckt SNMOSLVT2SH D G S B B2 
+.ends SNMOSLVT2SH 
+.subckt SNMOSLVT2SH_S D G S B B2 
+.ends SNMOSLVT2SH_S 
+.subckt SNMOSLVT2G D G S B B2 
+.ends SNMOSLVT2G 
+.subckt SNMOSLVT2G_S D G S B B2 
+.ends SNMOSLVT2G_S 
+.subckt SNMOSLVT2QG D G S B B2 
+.ends SNMOSLVT2QG 
+.subckt SNMOSLVT2QG_S D G S B B2 
+.ends SNMOSLVT2QG_S 
+.subckt SNMOSLVT2LSA D G S B B2 
+.ends SNMOSLVT2LSA 
+.subckt SNMOSLVT2LSA_S D G S B B2 
+.ends SNMOSLVT2LSA_S 
+.subckt SNMOSLVTG D G S B B2 
+.ends SNMOSLVTG 
+.subckt SNMOSLVTG_S D G S B B2 
+.ends SNMOSLVTG_S 
+.subckt SNMOSLVTGENTG D G S B B2 
+.ends SNMOSLVTGENTG 
+.subckt SNMOSLVTGENTG_S D G S B B2 
+.ends SNMOSLVTGENTG_S 
+.subckt SNMOSLVT2GENTG D G S B B2 
+.ends SNMOSLVT2GENTG 
+.subckt SNMOSLVT2GENTG_S D G S B B2 
+.ends SNMOSLVT2GENTG_S 
+.subckt SNMOSPRE D G S B B2 
+.ends SNMOSPRE 
+.subckt SNMOSPRE_S D G S B B2 
+.ends SNMOSPRE_S 
+.subckt SNMOSQ D G S B B2 
+.ends SNMOSQ 
+.subckt SNMOSQ_S D G S B B2 
+.ends SNMOSQ_S 
+.subckt SNMOSQG D G S B B2 
+.ends SNMOSQG 
+.subckt SNMOSQG_S D G S B B2 
+.ends SNMOSQG_S 
+.subckt SNMOSSA D G S B B2 
+.ends SNMOSSA 
+.subckt SNMOSSA_S D G S B B2 
+.ends SNMOSSA_S 
+.subckt SNMOSSA_16GMD D G S B B2 
+.ends SNMOSSA_16GMD 
+.subckt SNMOSSA_16GMD_S D G S B B2 
+.ends SNMOSSA_16GMD_S 
+.subckt SNMOSSRE D G S B B2 
+.ends SNMOSSRE 
+.subckt SNMOSSRE_S D G S B B2 
+.ends SNMOSSRE_S 
+.subckt SNMOSSREG D G S B B2 
+.ends SNMOSSREG 
+.subckt SNMOSSREG_S D G S B B2 
+.ends SNMOSSREG_S 
+.subckt SNMOS2SRE D G S B B2 
+.ends SNMOS2SRE 
+.subckt SNMOS2SRE_S D G S B B2 
+.ends SNMOS2SRE_S 
+.subckt SNMOS2SREG D G S B B2 
+.ends SNMOS2SREG 
+.subckt SNMOS2SREG_S D G S B B2 
+.ends SNMOS2SREG_S 
+.subckt SNMOSTR D G S B B2 
+.ends SNMOSTR 
+.subckt SNMOSTR_S D G S B B2 
+.ends SNMOSTR_S 
+.subckt SNMOSYI D G S B B2 
+.ends SNMOSYI 
+.subckt SNMOSYI_S D G S B B2 
+.ends SNMOSYI_S 
+.subckt SNMOSLVTYI D G S B B2 
+.ends SNMOSLVTYI 
+.subckt SNMOSLVTYI_S D G S B B2 
+.ends SNMOSLVTYI_S 
+.subckt SNMOSLVTSB D G S B B2 
+.ends SNMOSLVTSB 
+.subckt SNMOSLVTSB_S D G S B B2 
+.ends SNMOSLVTSB_S 
+.subckt SNMOSLVTLSA D G S B B2 
+.ends SNMOSLVTLSA 
+.subckt SNMOSLVTLSA_S D G S B B2 
+.ends SNMOSLVTLSA_S 
+.subckt SNMOSLVTLSASB D G S B B2 
+.ends SNMOSLVTLSASB 
+.subckt SNMOSLVTLSASB_S D G S B B2 
+.ends SNMOSLVTLSASB_S 
+.subckt SNMOSLVTLSAT D G S B B2 
+.ends SNMOSLVTLSAT 
+.subckt SNMOSLVTLSAT_S D G S B B2 
+.ends SNMOSLVTLSAT_S 
+.subckt SNMOSLVTLSAB D G S B B2 
+.ends SNMOSLVTLSAB 
+.subckt SNMOSLVTLSAB_S D G S B B2 
+.ends SNMOSLVTLSAB_S 
+.subckt SNMOSLVTLSARE D G S B B2 
+.ends SNMOSLVTLSARE 
+.subckt SNMOSLVTLSARE_S D G S B B2 
+.ends SNMOSLVTLSARE_S 
+.subckt SNMOSLVTLSASIO D G S B B2 
+.ends SNMOSLVTLSASIO 
+.subckt SNMOSLVTLSASIO_S D G S B B2 
+.ends SNMOSLVTLSASIO_S 
+.subckt SNMOSLVTIOT D G S B B2 
+.ends SNMOSLVTIOT 
+.subckt SNMOSLVTIOT_S D G S B B2 
+.ends SNMOSLVTIOT_S 
+.subckt SNMOSLVTIOB D G S B B2 
+.ends SNMOSLVTIOB 
+.subckt SNMOSLVTIOB_S D G S B B2 
+.ends SNMOSLVTIOB_S 
+.subckt SNMOSLVTRTO D G S B B2 
+.ends SNMOSLVTRTO 
+.subckt SNMOSLVTRTO_S D G S B B2 
+.ends SNMOSLVTRTO_S 
+.subckt NMOSADEC D G S B B2 
+.ends NMOSADEC 
+.subckt NMOSADEC_S D G S B B2 
+.ends NMOSADEC_S 
+.subckt NMOSALATDEC D G S B B2 
+.ends NMOSALATDEC 
+.subckt NMOSALATDEC_S D G S B B2 
+.ends NMOSALATDEC_S 
+.subckt NMOSLVTADEC D G S B B2 
+.ends NMOSLVTADEC 
+.subckt NMOSLVTADEC_S D G S B B2 
+.ends NMOSLVTADEC_S 
+.subckt NMOSWC D G S B 
+.ends NMOSWC 
+.subckt NMOSWC_S D G S B 
+.ends NMOSWC_S 
+.subckt NMOSWCG D G S B 
+.ends NMOSWCG 
+.subckt NMOSWCG_S D G S B 
+.ends NMOSWCG_S 
+.subckt SNMOSLVT2RTO D G S B B2 
+.ends SNMOSLVT2RTO 
+.subckt SNMOSLVT2RTO_S D G S B B2 
+.ends SNMOSLVT2RTO_S 
+.subckt SNMOSLVT2SA D G S B B2 
+.ends SNMOSLVT2SA 
+.subckt SNMOSLVT2SA_S D G S B B2 
+.ends SNMOSLVT2SA_S 
+.subckt SNMOSLVT2SA2 D G S B B2 
+.ends SNMOSLVT2SA2 
+.subckt SNMOSLVT2SA2_S D G S B B2 
+.ends SNMOSLVT2SA2_S 
+.subckt SNMOSLVT2SAFD D G S B B2 
+.ends SNMOSLVT2SAFD 
+.subckt SNMOSLVT2SAFD_S D G S B B2 
+.ends SNMOSLVT2SAFD_S 
+.subckt SNMOSLVTEQPRE D G S B B2 
+.ends SNMOSLVTEQPRE 
+.subckt SNMOSLVTEQPRE_S D G S B B2 
+.ends SNMOSLVTEQPRE_S 
+.subckt SNMOSLVTPRE D G S B B2 
+.ends SNMOSLVTPRE 
+.subckt SNMOSLVTPRE_S D G S B B2 
+.ends SNMOSLVTPRE_S 
+.subckt SNMOSLVTEQ D G S B B2 
+.ends SNMOSLVTEQ 
+.subckt SNMOSLVTEQ_S D G S B B2 
+.ends SNMOSLVTEQ_S 
+.subckt SNMOSLVTMC D G S B B2 
+.ends SNMOSLVTMC 
+.subckt SNMOSLVTMC_S D G S B B2 
+.ends SNMOSLVTMC_S 
+.subckt SNMOSLVTISO D G S B B2 
+.ends SNMOSLVTISO 
+.subckt SNMOSLVTISO_S D G S B B2 
+.ends SNMOSLVTISO_S 
+.subckt SNMOSLVT2PRE D G S B B2 
+.ends SNMOSLVT2PRE 
+.subckt SNMOSLVT2PRE_S D G S B B2 
+.ends SNMOSLVT2PRE_S 
+.subckt SNMOSLVT2EQ D G S B B2 
+.ends SNMOSLVT2EQ 
+.subckt SNMOSLVT2EQ_S D G S B B2 
+.ends SNMOSLVT2EQ_S 
+.subckt SNMOSLVT2MC D G S B B2 
+.ends SNMOSLVT2MC 
+.subckt SNMOSLVT2MC_S D G S B B2 
+.ends SNMOSLVT2MC_S 
+.subckt SNMOSLVT2ISO D G S B B2 
+.ends SNMOSLVT2ISO 
+.subckt SNMOSLVT2ISO_S D G S B B2 
+.ends SNMOSLVT2ISO_S 
+.subckt SNMOSLVT2YI D G S B B2 
+.ends SNMOSLVT2YI 
+.subckt SNMOSLVT2YI_S D G S B B2 
+.ends SNMOSLVT2YI_S 
+.subckt SNMOSLVT2LSASIO D G S B B2 
+.ends SNMOSLVT2LSASIO 
+.subckt SNMOSLVT2LSASIO_S D G S B B2 
+.ends SNMOSLVT2LSASIO_S 
+.subckt SNMOSLVT2LSARE D G S B B2 
+.ends SNMOSLVT2LSARE 
+.subckt SNMOSLVT2LSARE_S D G S B B2 
+.ends SNMOSLVT2LSARE_S 
+.subckt SNMOSLVT2IOT D G S B B2 
+.ends SNMOSLVT2IOT 
+.subckt SNMOSLVT2IOT_S D G S B B2 
+.ends SNMOSLVT2IOT_S 
+.subckt SNMOSLVT2IOB D G S B B2 
+.ends SNMOSLVT2IOB 
+.subckt SNMOSLVT2IOB_S D G S B B2 
+.ends SNMOSLVT2IOB_S 
+.subckt SNMOSLVT2SB D G S B B2 
+.ends SNMOSLVT2SB 
+.subckt SNMOSLVT2SB_S D G S B B2 
+.ends SNMOSLVT2SB_S 
+.subckt SPMOSLVTSA D G S B 
+.ends SPMOSLVTSA 
+.subckt SPMOSLVTSA_S D G S B 
+.ends SPMOSLVTSA_S 
+.subckt SPMOSLVT2SA D G S B 
+.ends SPMOSLVT2SA 
+.subckt SPMOSLVT2SA_S D G S B 
+.ends SPMOSLVT2SA_S 
+.subckt SPMOSLVT2SA2 D G S B 
+.ends SPMOSLVT2SA2 
+.subckt SPMOSLVT2SA2_S D G S B 
+.ends SPMOSLVT2SA2_S 
+.subckt SPMOSLVT2SAFD D G S B 
+.ends SPMOSLVT2SAFD 
+.subckt SPMOSLVT2SAFD_S D G S B 
+.ends SPMOSLVT2SAFD_S 
+.subckt PMOS D G S B 
+.ends PMOS 
+.subckt PMOS_S D G S B 
+.ends PMOS_S 
+.subckt PMOSG D G S B 
+.ends PMOSG 
+.subckt PMOSG_S D G S B 
+.ends PMOSG_S 
+.subckt PMOSLVPPQG D G S B 
+.ends PMOSLVPPQG 
+.subckt PMOSLVPPQG_S D G S B 
+.ends PMOSLVPPQG_S 
+.subckt PMOSA D G S B 
+.ends PMOSA 
+.subckt PMOSA_S D G S B 
+.ends PMOSA_S 
+.subckt PMOSALAT D G S B 
+.ends PMOSALAT 
+.subckt PMOSALAT_S D G S B 
+.ends PMOSALAT_S 
+.subckt PMOSASH D G S B 
+.ends PMOSASH 
+.subckt PMOSASH_S D G S B 
+.ends PMOSASH_S 
+.subckt PMOSAG D G S B 
+.ends PMOSAG 
+.subckt PMOSAG_S D G S B 
+.ends PMOSAG_S 
+.subckt PMOSA3G D G S B 
+.ends PMOSA3G 
+.subckt PMOSA3G_S D G S B 
+.ends PMOSA3G_S 
+.subckt PMOSMWB D G S B 
+.ends PMOSMWB 
+.subckt PMOSMWB_S D G S B 
+.ends PMOSMWB_S 
+.subckt PMOSLVT D G S B 
+.ends PMOSLVT 
+.subckt PMOSLVT_S D G S B 
+.ends PMOSLVT_S 
+.subckt PMOSLVTG D G S B 
+.ends PMOSLVTG 
+.subckt PMOSLVTG_S D G S B 
+.ends PMOSLVTG_S 
+.subckt PMOSLVTA D G S B 
+.ends PMOSLVTA 
+.subckt PMOSLVTA_S D G S B 
+.ends PMOSLVTA_S 
+.subckt PMOSLVTASH D G S B 
+.ends PMOSLVTASH 
+.subckt PMOSLVTASH_S D G S B 
+.ends PMOSLVTASH_S 
+.subckt PMOSQG D G S B 
+.ends PMOSQG 
+.subckt PMOSQG_S D G S B 
+.ends PMOSQG_S 
+.subckt PMOSESD D G S B 
+.ends PMOSESD 
+.subckt PMOSESD_S D G S B 
+.ends PMOSESD_S 
+.subckt PMOSESDG D G S B 
+.ends PMOSESDG 
+.subckt PMOSESDG_S D G S B 
+.ends PMOSESDG_S 
+.subckt PMOS_ESD D G S B 
+.ends PMOS_ESD 
+.subckt PMOS_ESD_S D G S B 
+.ends PMOS_ESD_S 
+.subckt PMOSG_ESD D G S B 
+.ends PMOSG_ESD 
+.subckt PMOSG_ESD_S D G S B 
+.ends PMOSG_ESD_S 
+.subckt SPMOS D G S B 
+.ends SPMOS 
+.subckt SPMOS_S D G S B 
+.ends SPMOS_S 
+.subckt SPMOSC D G S B 
+.ends SPMOSC 
+.subckt SPMOSC_S D G S B 
+.ends SPMOSC_S 
+.subckt SPMOSCCL D G S B 
+.ends SPMOSCCL 
+.subckt SPMOSCCL_S D G S B 
+.ends SPMOSCCL_S 
+.subckt SPMOSCCLG D G S B 
+.ends SPMOSCCLG 
+.subckt SPMOSCCLG_S D G S B 
+.ends SPMOSCCLG_S 
+.subckt SPMOSSH D G S B 
+.ends SPMOSSH 
+.subckt SPMOSSH_S D G S B 
+.ends SPMOSSH_S 
+.subckt SPMOSG D G S B 
+.ends SPMOSG 
+.subckt SPMOSG_S D G S B 
+.ends SPMOSG_S 
+.subckt SPMOSCG D G S B 
+.ends SPMOSCG 
+.subckt SPMOSCG_S D G S B 
+.ends SPMOSCG_S 
+.subckt SPMOS32 D G S B 
+.ends SPMOS32 
+.subckt SPMOS32_S D G S B 
+.ends SPMOS32_S 
+.subckt SPMOS32G D G S B 
+.ends SPMOS32G 
+.subckt SPMOS32G_S D G S B 
+.ends SPMOS32G_S 
+.subckt SPMOSQ D G S B 
+.ends SPMOSQ 
+.subckt SPMOSQ_S D G S B 
+.ends SPMOSQ_S 
+.subckt SPMOSQG D G S B 
+.ends SPMOSQG 
+.subckt SPMOSQG_S D G S B 
+.ends SPMOSQG_S 
+.subckt SPMOSLVT D G S B 
+.ends SPMOSLVT 
+.subckt SPMOSLVT_S D G S B 
+.ends SPMOSLVT_S 
+.subckt SPMOSLVTC D G S B 
+.ends SPMOSLVTC 
+.subckt SPMOSLVTC_S D G S B 
+.ends SPMOSLVTC_S 
+.subckt SPMOSLVTSH D G S B 
+.ends SPMOSLVTSH 
+.subckt SPMOSLVTSH_S D G S B 
+.ends SPMOSLVTSH_S 
+.subckt SPMOSLVTSH44 D G S B 
+.ends SPMOSLVTSH44 
+.subckt SPMOSLVTSH44_S D G S B 
+.ends SPMOSLVTSH44_S 
+.subckt SPMOSLVTSHSIO D G S B 
+.ends SPMOSLVTSHSIO 
+.subckt SPMOSLVTSHSIO_S D G S B 
+.ends SPMOSLVTSHSIO_S 
+.subckt SPMOSLVTG D G S B 
+.ends SPMOSLVTG 
+.subckt SPMOSLVTG_S D G S B 
+.ends SPMOSLVTG_S 
+.subckt SPMOSLVTCG D G S B 
+.ends SPMOSLVTCG 
+.subckt SPMOSLVTCG_S D G S B 
+.ends SPMOSLVTCG_S 
+.subckt SPMOSLVTF D G S B 
+.ends SPMOSLVTF 
+.subckt SPMOSLVTF_S D G S B 
+.ends SPMOSLVTF_S 
+.subckt SPMOSLVTQ D G S B 
+.ends SPMOSLVTQ 
+.subckt SPMOSLVTQ_S D G S B 
+.ends SPMOSLVTQ_S 
+.subckt SPMOSLVTQG D G S B 
+.ends SPMOSLVTQG 
+.subckt SPMOSLVTQG_S D G S B 
+.ends SPMOSLVTQG_S 
+.subckt SPMOSLVT2 D G S B 
+.ends SPMOSLVT2 
+.subckt SPMOSLVT2_S D G S B 
+.ends SPMOSLVT2_S 
+.subckt SPMOSLVT2C D G S B 
+.ends SPMOSLVT2C 
+.subckt SPMOSLVT2C_S D G S B 
+.ends SPMOSLVT2C_S 
+.subckt SPMOSLVT2CG D G S B 
+.ends SPMOSLVT2CG 
+.subckt SPMOSLVT2CG_S D G S B 
+.ends SPMOSLVT2CG_S 
+.subckt SPMOSLVT2G D G S B 
+.ends SPMOSLVT2G 
+.subckt SPMOSLVT2G_S D G S B 
+.ends SPMOSLVT2G_S 
+.subckt SPMOSLVT2Q D G S B 
+.ends SPMOSLVT2Q 
+.subckt SPMOSLVT2Q_S D G S B 
+.ends SPMOSLVT2Q_S 
+.subckt SPMOSLVT2QG D G S B 
+.ends SPMOSLVT2QG 
+.subckt SPMOSLVT2QG_S D G S B 
+.ends SPMOSLVT2QG_S 
+.subckt SPMOSSA D G S B 
+.ends SPMOSSA 
+.subckt SPMOSSA_S D G S B 
+.ends SPMOSSA_S 
+.subckt SPMOSDEPCAP D G S B 
+.ends SPMOSDEPCAP 
+.subckt SPMOSDEPCAP_S D G S B 
+.ends SPMOSDEPCAP_S 
+.subckt SPMOSDEPCAPG D G S B 
+.ends SPMOSDEPCAPG 
+.subckt SPMOSDEPCAPG_S D G S B 
+.ends SPMOSDEPCAPG_S 
+.subckt SPMOSDEPCAP_B D G S B 
+.ends SPMOSDEPCAP_B 
+.subckt SPMOSDEPCAP_B_S D G S B 
+.ends SPMOSDEPCAP_B_S 
+.subckt PMOSADEC D G S B 
+.ends PMOSADEC 
+.subckt PMOSADEC_S D G S B 
+.ends PMOSADEC_S 
+.subckt PMOSALATDEC D G S B 
+.ends PMOSALATDEC 
+.subckt PMOSALATDEC_S D G S B 
+.ends PMOSALATDEC_S 
+.subckt PMOSLVTADEC D G S B 
+.ends PMOSLVTADEC 
+.subckt PMOSLVTADEC_S D G S B 
+.ends PMOSLVTADEC_S 
+.subckt BAD_NMOS D G S B 
+.ends BAD_NMOS 
+.subckt BAD_NMOS_S D G S B 
+.ends BAD_NMOS_S 
+.subckt BAD_PMOS D G S B 
+.ends BAD_PMOS 
+.subckt BAD_PMOS_S D G S B 
+.ends BAD_PMOS_S 
+.subckt RISOND A B B2 
+.ends RISOND 
+.subckt RISONDB A B B2 DB 
+.ends RISONDB 
+.subckt RISOND_4CT A B B2 
+.ends RISOND_4CT 
+.subckt RISOND_4CT_S A B B2 
+.ends RISOND_4CT_S 
+.subckt RISOND_S A B B2 
+.ends RISOND_S 
+.subckt RISOND_NB A B B2 
+.ends RISOND_NB 
+.subckt RISONDB_NB A B B2 DB 
+.ends RISONDB_NB 
+.subckt RISOPD_ESD A B B2 
+.ends RISOPD_ESD 
+.subckt RISOPD A B B2 
+.ends RISOPD 
+.subckt CM1 A B 
+.ends CM1 
+.subckt CM2 A B 
+.ends CM2 
+.subckt CM3 A B 
+.ends CM3 
+.subckt CM4 A B 
+.ends CM4 
+.subckt CM5 A B 
+.ends CM5 
+.subckt CM6 A B 
+.ends CM6 
+.subckt CM7 A B 
+.ends CM7 
+.subckt RESRDLCL A B 
+.ends RESRDLCL 
+.subckt OM1 A B 
+.ends OM1 
+.subckt OM2 A B 
+.ends OM2 
+.subckt OM3 A B 
+.ends OM3 
+.subckt OM4 A B 
+.ends OM4 
+.subckt OM5 A B 
+.ends OM5 
+.subckt OM6 A B 
+.ends OM6 
+.subckt OM7 A B 
+.ends OM7 
+.subckt RESRDLOP A B 
+.ends RESRDLOP 
+.subckt TSV_Model_RLC A B B2 
+.ends TSV_Model_RLC 
+.subckt NMOSALXDG D G S B B2 
+.ends NMOSALXDG 
+.subckt NMOSABLDISG D G S B B2 
+.ends NMOSABLDISG 
+.subckt NMOSAGYDISG D G S B B2 
+.ends NMOSAGYDISG 
+.subckt NMOSA2 D G S B B2 
+.ends NMOSA2 
+.subckt NMOSA2G D G S B B2 
+.ends NMOSA2G 
+.subckt NMOSA3G D G S B B2 
+.ends NMOSA3G 
+.subckt NMOSALXG D G S B B2 
+.ends NMOSALXG 
+.subckt NMOSAGXG D G S B B2 
+.ends NMOSAGXG 
+.subckt NMOSNN D G S B B2 
+.ends NMOSNN 
+.subckt NMOSNNG D G S B B2 
+.ends NMOSNNG 
+.subckt PMOSWLDISG D G S B 
+.ends PMOSWLDISG 
+.subckt PMOSLXDG D G S B 
+.ends PMOSLXDG 
+.subckt PMOSGXDISG D G S B 
+.ends PMOSGXDISG 
+.subckt PMOSLVTGYG D G S B 
+.ends PMOSLVTGYG 
+.subckt PMOSLVTLYG D G S B 
+.ends PMOSLVTLYG 
+.subckt PMOSNN D G S B 
+.ends PMOSNN 
+.subckt PMOSNNG D G S B 
+.ends PMOSNNG 
+.subckt RES_BL1OPT A B 
+.ends RES_BL1OPT 
+.subckt RES_BL2OPT A B 
+.ends RES_BL2OPT 
+.subckt RES_BL3OPT A B 
+.ends RES_BL3OPT 
+.subckt RES_BL4OPT A B 
+.ends RES_BL4OPT 
+.subckt RES_WL1OPT A B 
+.ends RES_WL1OPT 
+.subckt RES_WL2OPT A B 
+.ends RES_WL2OPT 
+.subckt RES_WL3OPT A B 
+.ends RES_WL3OPT 
+.subckt RES_WL4OPT A B 
+.ends RES_WL4OPT 
+
+
+****************************************************************************** * 
+* Main Circuit Netlist: * 
+* * 
+* Library: LI * 
+* Cell : CE * 
+* View : schematic * 
+* Last Time Saved: Apr 14 20:49:51 2023 * 
+****************************************************************************** * 
+.subckt TWKANG OUT VDD VSS A B C D E INN INP 
+*.PININFO OUT:O VDD:B VSS:B A:I B:I C:I D:I E:I INN:I INP:I  
+XMP8_0<0> NET00 NET03 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP8_0<1> NET00 NET03 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP8_0<2> NET00 NET03 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP8_0<3> NET00 NET03 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP8_1<0> NET01 NET02 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP8_1<1> NET01 NET02 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP8_1<2> NET01 NET02 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP8_1<3> NET01 NET02 NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_0<0> NET00 INP NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_0<1> NET00 INP NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_0<2> NET00 INP NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_0<3> NET00 INP NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_1<0> NET01 INN NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_1<1> NET01 INN NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_1<2> NET01 INN NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XMP7_1<3> NET01 INN NET_049 VDD PMOSLVTG w=1 l=1 nf=1 geomod=0 
+XM5 NET_049 A VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_0<0> NET03 INP NET_059<0> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_0<1> NET03 INP NET_059<1> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_0<2> NET03 INP NET_059<2> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_0<3> NET03 INP NET_059<3> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP3_0<0> NET36 D NET03 VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP3_0<1> NET36 D NET03 VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP3_1<0> OUT D NET02 VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP3_1<1> OUT D NET02 VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_1<0> NET_060<0> NET_059<0> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_1<1> NET_060<1> NET_059<1> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_1<2> NET_060<2> NET_059<2> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_1<3> NET_060<3> NET_059<3> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_0<0> NET_059<0> NET_059<0> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_0<1> NET_059<1> NET_059<1> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_0<2> NET_059<2> NET_059<2> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP1_0<3> NET_059<3> NET_059<3> VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XM2 NET_049 A VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XM3 NET_049 A VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XM4 NET_049 A VDD VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_1<0> NET02 INN NET_060<0> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_1<1> NET02 INN NET_060<1> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_1<2> NET02 INN NET_060<2> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP2_1<3> NET02 INN NET_060<3> VDD PMOSG w=2 l=1 nf=1 geomod=0 
+XMP6_1<0> NET02 INN NET_051 VSS VSS NMOSLVTAG w=1 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP6_1<1> NET02 INN NET_051 VSS VSS NMOSLVTAG w=1 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP6_0<0> NET03 INP NET_051 VSS VSS NMOSLVTAG w=1 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP6_0<1> NET03 INP NET_051 VSS VSS NMOSLVTAG w=1 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_0<0> NET36 INN NET00 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB
+XMP4_0<1> NET36 INN NET00 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_0<2> NET36 INN NET00 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_0<3> NET36 INN NET00 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM8 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM12 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM13 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM11 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_1<0> NET01 E VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_1<1> NET01 E VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_1<2> NET01 E VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_1<3> NET01 E VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_1<4> NET01 E VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_1<5> NET01 E VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<0> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<1> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<2> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<3> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<4> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<5> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<6> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP4_1<7> OUT INP NET01 VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_0<0> NET00 C VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB
+XMP5_0<1> NET00 C VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_0<2> NET00 C VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_0<3> NET00 C VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_0<4> NET00 C VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XMP5_0<5> NET00 C VSS VSS VSS NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM9 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM10 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM7 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+XM6 NET_051 B VSS VSS VVB NMOSAG w=0.8 l=1 nf=1 geomod=0 $bulk2=VVB 
+.ends CE
